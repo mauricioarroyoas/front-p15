@@ -1,4 +1,4 @@
-import Example from "./example";
+import Example from "./Example";
 import ThreadList from "./ThreadList";
 
 function App() {
