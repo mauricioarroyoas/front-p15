@@ -1,9 +1,11 @@
+import ThreadList from "./ThreadList";
+
 function App() {
   return (
-    <>
-    <span>app works</span>
-    </>
-  )
+    <div className="app">
+      <ThreadList />
+    </div>
+  );
 }
 
-export default App
+export default App;
