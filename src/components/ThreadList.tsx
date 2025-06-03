@@ -1,12 +1,7 @@
-const ThreadList: React.FC = () => {
-  const threads = [
-    { id: 1, name: "David" },
-    { id: 2, name: "Sarah" },
-    { id: 3, name: "Leo" },
-    { id: 4, name: "Emma" },
-    { id: 5, name: "Carlos" },
-  ];
+import { useSelector } from "react-redux";
 
+const ThreadList: React.FC = () => {
+  const threads = useSelector((state: any) => state.threads.threads);
   return (
     <div className="ThreadList max-w-sm mx-auto mt-10 py-8 bg-white rounded-2xl border border-gray-300">
       {threads.map((thread) => (
