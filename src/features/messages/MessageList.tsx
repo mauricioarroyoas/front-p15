@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux';
-import { RootState } from '../../app/store';
-import { Message } from '../features/messages/messagesSlice';
+import type { RootState } from '../../app/store';
 
 type Props = {
   threadId: string;
